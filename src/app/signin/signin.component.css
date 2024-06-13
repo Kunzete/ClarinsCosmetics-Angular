@@ -1,0 +1,91 @@
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  border: 1px solid red;
+}
+
+.container-fluid {
+  max-width: 100vw;
+  width: auto;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  overflow: hidden;
+
+  video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-resolution: 8000px;
+  }
+}
+
+.form {
+  max-width: 70vw;
+  min-width: 40vw;
+  background-color: rgba(14, 14, 14, 0.128);
+  backdrop-filter: blur(3px);
+  padding: 5%;
+  border-radius: 10px;
+  z-index: 999999999;
+  position: relative;
+}
+
+.form label,
+.form input,
+.form button {
+  color: white;
+}
+.form input {
+  border: none;
+  background-color: rgba(14, 14, 14, 0.128);
+  backdrop-filter: blur(3px);
+}

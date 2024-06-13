@@ -1,0 +1,44 @@
+<nav>
+  <div class="news py-1">
+    <i>
+      <h5>EID SALE AVAILABLE PURCHASE NOW 80% OFF!!!</h5>
+    </i>
+  </div>
+  <div class="nav d-flex justify-content-between">
+    <a href="" routerLink="" routerLinkActive="Active"><img class="logo" src="../../assets/Images/Logo.png" alt="" /></a>
+    <ul class="tabs">
+      <li><a href="" routerLink="/body" routerLinkActive="">Body</a></li>
+      <li><a href="" routerLink="/perfume" routerLinkActive="">Perfume</a></li>
+      <li><a href="" routerLink="/haircare" routerLinkActive="">HairCare</a></li>
+      <li><a href="" routerLink="/sunscreen" routerLinkActive="">Sunscreen</a></li>
+      <li><a href="" routerLink="/makeup" routerLinkActive="">Makeup</a></li>
+      <li><a href="" routerLink="/face" routerLinkActive="">Face</a></li>
+    </ul>
+    <ul class="auth">
+      <li>
+        <a class="btn border-dark btn-outline-light py-1 px-3 rounded-5" href="" routerLink="/signin" routerLinkActive="" >
+          <i class="bi bi-person-fill"></i><span> Signin</span>
+        </a>
+      </li>
+      <li>
+        <a class="btn border-dark btn-outline-light py-1 px-3 me-3 rounded-5" href="" routerLink="/signup" routerLinkActive="">
+          <i class="bi bi-person-fill"></i><span> Signup</span>
+        </a>
+      </li>
+    </ul>
+    <div class="Hamburger" (click)="toggleMenu()">
+      <i class="bi bi-list" style="font-size: 32px;"></i>
+    </div>
+    <div class="nav-mobile" [class.active]="isMenuActive">
+      <li><a href="" routerLink="/body" routerLinkActive="">Body</a></li>
+      <li><a href="" routerLink="/perfume" routerLinkActive="">Perfume</a></li>
+      <li><a href="" routerLink="/haircare" routerLinkActive="">HairCare</a></li>
+      <li><a href="" routerLink="/sunscreen" routerLinkActive="">Sunscreen</a></li>
+      <li><a href="" routerLink="/makeup" routerLinkActive="">Makeup</a></li>
+      <li><a href="" routerLink="/face" routerLinkActive="">Face</a></li>
+      <li><a href="" routerLink="/signin" routerLinkActive="">Sign in</a></li>
+      <li><a href="" routerLink="/signup" routerLinkActive="">Sign Up</a></li>
+    </div>
+  </div>
+</nav>
+<div class="navbar-placeholder"></div>

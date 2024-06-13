@@ -1,0 +1,31 @@
+section {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../../assets/Images/background.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 3%;
+  overflow-x: hidden;
+}
+
+.card{
+    width: 18rem;
+}
+
+.card img{
+    aspect-ratio: 4/3;
+}
+
+@media only screen and (max-width: 600px){
+  section{
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+   .card{
+        width: 16rem;
+    }
+   .card img{
+        aspect-ratio: 4/3;
+    }
+}
